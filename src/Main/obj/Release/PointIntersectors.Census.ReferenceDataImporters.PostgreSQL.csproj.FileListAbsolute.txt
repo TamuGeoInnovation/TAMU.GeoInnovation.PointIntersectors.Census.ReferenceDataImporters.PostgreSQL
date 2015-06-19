@@ -1,0 +1,4 @@
+C:\DevBuild\Tamu\GeoInnovation\PointIntersectors\PointIntersectors.Census.ReferenceDataImporters.PostgreSql\build\1.0.0\release\TAMU.GeoInnovation.PointIntersectors.Census.ReferenceDataImporters.PostgreSQL.dll
+C:\DevSource\Tamu\GeoInnovation\PointIntersectors\PointIntersectors.Census.ReferenceDataImporters.PostgreSQL\src\Main\obj\Release\PointIntersectors.Census.ReferenceDataImporters.PostgreSQL.csprojResolveAssemblyReference.cache
+C:\DevSource\Tamu\GeoInnovation\PointIntersectors\PointIntersectors.Census.ReferenceDataImporters.PostgreSQL\src\Main\obj\Release\TAMU.GeoInnovation.PointIntersectors.Census.ReferenceDataImporters.PostgreSQL.dll
+C:\DevSource\Tamu\GeoInnovation\PointIntersectors\PointIntersectors.Census.ReferenceDataImporters.PostgreSQL\build\1.0.0\AnyCPU\release\TAMU.GeoInnovation.PointIntersectors.Census.ReferenceDataImporters.PostgreSQL.dll
