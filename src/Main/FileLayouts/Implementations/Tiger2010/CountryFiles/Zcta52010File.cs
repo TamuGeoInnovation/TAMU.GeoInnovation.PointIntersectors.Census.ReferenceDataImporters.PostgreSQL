@@ -11,7 +11,7 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.PostgreSQ
 
             FileName = "zcta510.zip";
 
-            SQLCreateTable += "CREATE TABLE " + OutputTableName + " (";
+            SQLCreateTable += "CREATE TABLE IF NOT EXISTS  " + OutputTableName + " (";
             SQLCreateTable += "zcta5ce10 varchar(5) DEFAULT NULL,";
             SQLCreateTable += "geoId10 varchar(5) DEFAULT NULL,";
             SQLCreateTable += "classFp10 varchar(2) DEFAULT NULL,";
