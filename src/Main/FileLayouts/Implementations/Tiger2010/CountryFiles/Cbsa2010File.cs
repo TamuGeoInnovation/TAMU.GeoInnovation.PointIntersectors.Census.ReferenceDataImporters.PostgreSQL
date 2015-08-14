@@ -31,7 +31,8 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.PostgreSQ
             SQLCreateTable += ");";
 
             //SQLCreateTableIndexes += " CREATE NONCLUSTERED INDEX [IDX_" + OutputTableName + "geoId10] ON [dbo].[" + OutputTableName + "] (geoId10) WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY];";
-            SQLCreateTableIndexes += " CREATE INDEX IDX_" + OutputTableName + "geoId10 ON" + OutputTableName + " (geoId10);";
+            SQLCreateTableIndexes += " CREATE INDEX IDX_" + OutputTableName + "geoId10 ON " + OutputTableName + " (geoId10);";
+            SQLCreateTableIndexes += " CREATE INDEX IDX_" + OutputTableName + "Spatial ON " + OutputTableName + " USING GIST (shapeGeom);";
         }
     }
 }
