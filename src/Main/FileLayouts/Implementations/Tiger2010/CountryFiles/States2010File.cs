@@ -11,8 +11,8 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.PostgreSQ
             : base(stateName)
         {
 
-            ExcludeColumns = new string[] 
-            { 
+            ExcludeColumns = new string[]
+            {
                 "uniqueId"
             };
 
@@ -45,7 +45,7 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.PostgreSQ
             SQLCreateTableIndexes += " CREATE INDEX IDX_" + OutputTableName + "Name10 ON " + OutputTableName + " (Name10);";
             SQLCreateTableIndexes += " CREATE  INDEX IDX_" + OutputTableName + "stUsPs10 ON " + OutputTableName + "(stUsPs10);";
             SQLCreateTableIndexes += " CREATE INDEX IDX_" + OutputTableName + "Spatial ON " + OutputTableName + " USING GIST (shapeGeom);";
-        
+
 
         }
     }

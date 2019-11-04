@@ -47,7 +47,7 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.PostgreSQ
             SQLCreateTableIndexes += " CREATE INDEX IDX_" + OutputTableName + "Name10 ON " + OutputTableName + " (Name10);";
             SQLCreateTableIndexes += " CREATE  INDEX IDX_" + OutputTableName + "Name10_Soundex ON " + OutputTableName + "(Name10_Soundex);";
             SQLCreateTableIndexes += " CREATE INDEX IDX_" + OutputTableName + "Name10_SoundexDM ON " + OutputTableName + "(Name10_SoundexDM);";
-        
+
         }
     }
 }

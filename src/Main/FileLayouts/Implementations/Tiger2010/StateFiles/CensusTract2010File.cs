@@ -5,14 +5,14 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.PostgreSQ
     public class CensusTract2010File : AbstractTiger2010ShapefileStateFileLayout
     {
 
-       
+
 
         public CensusTract2010File(string stateName)
             : base(stateName)
         {
 
-            ExcludeColumns = new string[] 
-            { 
+            ExcludeColumns = new string[]
+            {
                 "uniqueId"
             };
 
@@ -29,7 +29,7 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.PostgreSQ
             SQLCreateTable += "NameLsad10 Varchar DEFAULT NULL,";
             SQLCreateTable += "Mtfcc10 Varchar DEFAULT NULL,";
             SQLCreateTable += "FuncStat10 Varchar DEFAULT NULL,";
-             SQLCreateTable += "ALAND10  Varchar DEFAULT NULL,";
+            SQLCreateTable += "ALAND10  Varchar DEFAULT NULL,";
             SQLCreateTable += "AWATER10 Varchar DEFAULT NULL,";
             SQLCreateTable += "INTPTLAT10  Varchar DEFAULT NULL,";
             SQLCreateTable += "INTPTLON10 Varchar DEFAULT NULL,";
@@ -44,4 +44,3 @@ namespace TAMU.GeoInnovation.Applications.Census.ReferenceDataImporter.PostgreSQ
     }
 }
 
- 
